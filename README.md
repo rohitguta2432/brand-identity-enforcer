@@ -64,31 +64,58 @@ overrides.md ────────┘
 ## Installation
 
 ### Claude Code (recommended)
-```bash
-# Install from GitHub
-claude skill install github:t0266li/brand-identity-enforcer
 
-# Or manually copy the skill
-cp -r .claude/skills/brand-identity-enforcer ~/.claude/skills/
+**One-command install (global — all projects):**
+```bash
+claude mcp add-skill brand-identity-enforcer -- git clone https://github.com/rohitguta2432/brand-identity-enforcer.git ~/.claude/skills/brand-identity-enforcer
+```
+
+**Or install manually:**
+```bash
+# Clone into your global skills directory
+git clone https://github.com/rohitguta2432/brand-identity-enforcer.git /tmp/bie
+cp -r /tmp/bie/.claude/skills/brand-identity-enforcer ~/.claude/skills/
+cp -r /tmp/bie/references ~/.claude/skills/brand-identity-enforcer/
+cp -r /tmp/bie/templates ~/.claude/skills/brand-identity-enforcer/
+cp -r /tmp/bie/examples ~/.claude/skills/brand-identity-enforcer/
+rm -rf /tmp/bie
+```
+
+**Or install per-project (current project only):**
+```bash
+git clone https://github.com/rohitguta2432/brand-identity-enforcer.git /tmp/bie
+mkdir -p .claude/skills/brand-identity-enforcer
+cp -r /tmp/bie/.claude/skills/brand-identity-enforcer/* .claude/skills/brand-identity-enforcer/
+cp -r /tmp/bie/references .claude/skills/brand-identity-enforcer/
+cp -r /tmp/bie/templates .claude/skills/brand-identity-enforcer/
+cp -r /tmp/bie/examples .claude/skills/brand-identity-enforcer/
+rm -rf /tmp/bie
 ```
 
 ### Cursor / VS Code
-Copy the `.claude/skills/brand-identity-enforcer/SKILL.md` file into your project's `.cursor/skills/` or `.claude/skills/` directory.
-
-### Manual Installation
 ```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/brand-identity-enforcer.git
-
-# Run the install script
-cd brand-identity-enforcer
-chmod +x install.sh
-./install.sh
+git clone https://github.com/rohitguta2432/brand-identity-enforcer.git /tmp/bie
+mkdir -p .cursor/skills/brand-identity-enforcer
+cp -r /tmp/bie/.claude/skills/brand-identity-enforcer/* .cursor/skills/brand-identity-enforcer/
+cp -r /tmp/bie/references .cursor/skills/brand-identity-enforcer/
+cp -r /tmp/bie/templates .cursor/skills/brand-identity-enforcer/
+cp -r /tmp/bie/examples .cursor/skills/brand-identity-enforcer/
+rm -rf /tmp/bie
 ```
 
-### Global Installation (all projects)
+### Using install.sh
 ```bash
-./install.sh --global
+git clone https://github.com/rohitguta2432/brand-identity-enforcer.git
+cd brand-identity-enforcer
+./install.sh              # Install to current project (.claude/skills/)
+./install.sh --global     # Install globally (~/.claude/skills/)
+./install.sh --cursor     # Install for Cursor (.cursor/skills/)
+```
+
+### Verify Installation
+```bash
+ls ~/.claude/skills/brand-identity-enforcer/SKILL.md
+# Should show the file. If it does, you're good!
 ```
 
 ## Usage
