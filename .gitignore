@@ -1,0 +1,19 @@
+# Brand identity artifacts (project-specific, not part of the skill)
+.brand-identity/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node
+node_modules/
+
+# Workspace/eval artifacts
+*-workspace/
