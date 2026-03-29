@@ -1,0 +1,6 @@
+{
+  "eval_id": 2,
+  "eval_name": "eval-dashboard-table",
+  "prompt": "Create a user management page with a data table showing name, email, role, and status columns, plus an invite user button. The project is at brand-identity-enforcer-workspace/test-fixtures/shadcn-nextjs/",
+  "assertions": []
+}

@@ -1,0 +1,6 @@
+{
+  "eval_id": 0,
+  "eval_name": "eval-settings-page-shadcn",
+  "prompt": "Add a settings page with profile editing, notification preferences, and a danger zone for account deletion. The project is at brand-identity-enforcer-workspace/test-fixtures/shadcn-nextjs/",
+  "assertions": []
+}

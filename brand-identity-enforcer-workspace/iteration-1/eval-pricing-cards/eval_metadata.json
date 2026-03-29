@@ -1,0 +1,6 @@
+{
+  "eval_id": 1,
+  "eval_name": "eval-pricing-cards",
+  "prompt": "Build a pricing card component with three tiers - free, pro, and enterprise. The project is at brand-identity-enforcer-workspace/test-fixtures/shadcn-nextjs/",
+  "assertions": []
+}

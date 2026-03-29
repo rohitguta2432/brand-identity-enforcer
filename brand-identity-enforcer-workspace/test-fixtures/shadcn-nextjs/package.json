@@ -1,0 +1,17 @@
+{
+  "name": "acme-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "@radix-ui/react-separator": "^1.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.400.0",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "geist": "^1.3.0"
+  }
+}

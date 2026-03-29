@@ -15,5 +15,5 @@ Thumbs.db
 # Node
 node_modules/
 
-# Workspace/eval artifacts
-*-workspace/
+# Workspace/eval artifacts (keep evaluation results for the repo)
+# *-workspace/
